@@ -11,6 +11,7 @@
     <title>Wait Enemy Register - Sea Battle</title>
 </head>
 <body>
+${playerGameContext.player.name}
 Please wait other player to join.
 </body>
 </html>

@@ -1,4 +1,4 @@
-package lv.tsi.javawev.seabattle.controller;
+package lv.tsi.javaweb.seabattle;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -7,17 +7,17 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "ShipPlacementServlet", urlPatterns = "/shipPlacement")
-public class ShipPlacementServlet extends HttpServlet {
+@WebServlet(name = "TestServlet", urlPatterns = "/runonserver")
+public class TestServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String[] addreses = request.getParameterValues("addr");
-        for (String a : addreses) {
-            System.out.println(a);
-        }
+
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/shipPlacement.jsp")
-                .include(request, response);
+System.out.println("Hooray!");
+
+String name = request.getParameter("name");
+
+response.getWriter().print("HELLO, " + name );
     }
 }

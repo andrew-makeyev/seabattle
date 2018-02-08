@@ -1,6 +1,6 @@
-package lv.tsi.javawev.seabattle.controller;
+package lv.tsi.javaweb.seabattle.controller;
 
-import lv.tsi.javawev.seabattle.model.PlayerGameContext;
+import lv.tsi.javaweb.seabattle.model.PlayerGameContext;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;

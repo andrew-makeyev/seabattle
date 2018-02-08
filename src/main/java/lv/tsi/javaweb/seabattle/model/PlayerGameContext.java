@@ -1,4 +1,4 @@
-package lv.tsi.javawev.seabattle.model;
+package lv.tsi.javaweb.seabattle.model;
 
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;
